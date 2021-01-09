@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "Monospace:size=10:antialias=true:autohint=true";
+static int borderpx = 20;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -96,24 +96,24 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#000000",
+	"#E45649",
+	"#32CD32",
+	"#FFD551",
+	"#4078F2",
+	"#A626A4",
+	"#73C2FB",
+	"#333333",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#2B2B2B",
+	"#E06C75",
+	"#6BDF6B",
+	"#FFDE77",
+	"#6D9BFE",
+	"#C862C7",
+	"#A4D9FF",
+	"#FFFFFF",
 
 	[255] = 0,
 
@@ -127,10 +127,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 236;
+unsigned int defaultbg = 15;
+static unsigned int defaultcs = 236;
+static unsigned int defaultrcs = 15;
 
 /*
  * Default shape of cursor
@@ -152,7 +152,7 @@ static unsigned int rows = 24;
  * Default colour and shape of the mouse cursor
  */
 static unsigned int mouseshape = XC_xterm;
-static unsigned int mousefg = 7;
+static unsigned int mousefg = 236;
 static unsigned int mousebg = 0;
 
 /*
